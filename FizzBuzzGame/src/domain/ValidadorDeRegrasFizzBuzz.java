@@ -17,8 +17,10 @@ public class ValidadorDeRegrasFizzBuzz {
 	
 	public void validar(int valor) {
 		for (RegraFizzBuzz regraFizzBuzz : listaDeRegras) {
-			if (regraFizzBuzz.executar(valor))
+			if (regraFizzBuzz.validar(valor)) {
+				regraFizzBuzz.executar(valor);
 				break;
+			}
 		}
 	}
 }

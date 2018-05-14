@@ -21,14 +21,8 @@ public class FizzBuzz implements RegraFizzBuzz {
 	}
 
 	@Override
-	public boolean executar(int valor) {
-		boolean valido = validar(valor);
-
-		if (valido) {
-			this.messanger.writeLine("FizzBuzz");
-		}
-
-		return false;
+	public void executar(int valor) {
+		this.messanger.writeLine("FizzBuzz");
 	}
 
 }
